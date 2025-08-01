@@ -1,0 +1,31 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "dev emulator",
+      "request": "launch",
+      "type": "dart",
+      "flutterMode": "debug",
+      "args": [
+        "--debug",
+        "--flavor",
+        "development",
+        "--dart-define=IS_EMULATOR=true"
+      ]
+    },
+    {
+      "name": "debug",
+      "request": "launch",
+      "type": "dart",
+      "flutterMode": "debug",
+      "args": ["--debug", "--flavor", "development"]
+    },
+    {
+      "name": "release",
+      "request": "launch",
+      "type": "dart",
+      "flutterMode": "release",
+      "args": ["--release", "--flavor", "production"]
+    }
+  ]
+}
